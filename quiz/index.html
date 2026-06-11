@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="inicio">
+        <h1>Quiz JavaScript</h1>
+
+        <select id="categoria">
+          <option value="">Todas as Categorias</option>
+
+          <option value="9">Conhecimentos Gerais</option>
+
+          <option value="18">Computação</option>
+
+          <option value="21">Esportes</option>
+
+          <option value="23">História</option>
+
+          <option value="17">Ciência e Natureza</option>
+        </select>
+
+        <select id="dificuldade">
+          <option value="">Qualquer dificuldade</option>
+
+          <option value="easy">Fácil</option>
+
+          <option value="medium">Médio</option>
+
+          <option value="hard">Difícil</option>
+        </select>
+
+        <h1>Quizzz</h1>
+        <button id="btnIniciar">Iniciar</button>
+      </div>
+      <div id="quiz" hidden>
+        <div class="barra-container">
+          <div id="barraProgresso"></div>
+        </div>
+        <div id="progresso"></div>
+        <div id="timer">15</div>
+        <h2 id="pergunta"></h2>
+        <div id="opcoes"></div>
+      </div>
+      <div id="resultado" hidden></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 2rem auto;
+      }
+
+      form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        padding: 0.5rem;
+      }
+
+      #tarefa {
+        flex: 1;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem;
+        border: 1px solid #ccc;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+      }
+
+      .concluida {
+        text-decoration: line-through;
+        opacity: 0.7;
+      }
+
+      .remover {
+        background: crimson;
+        color: white;
+        border: none;
+        padding: 0.3rem 0.6rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lista de Tarefas</h1>
+
+    <input type="text" id="busca" placeholder="Buscar tarefa..." />
+
+    <br /><br />
+
+    <form id="formTarefa">
+      <input type="text" id="tarefa" placeholder="Digite uma tarefa" required />
+
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <ul id="listaTarefas"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>

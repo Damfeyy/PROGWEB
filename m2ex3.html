@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrícula FATEC</title>
+  </head>
+
+  <body>
+    <h1>Formulário de Matrícula - FATEC</h1>
+
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label>Nome Completo:</label><br />
+        <input type="text" required minlength="5" />
+
+        <br /><br />
+
+        <label>Email:</label><br />
+        <input type="email" required />
+
+        <br /><br />
+
+        <label>Data de Nascimento:</label><br />
+        <input type="date" />
+
+        <br /><br />
+
+        <label>CPF:</label><br />
+        <input
+          type="text"
+          pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}"
+          placeholder="000.000.000-00"
+        />
+
+        <br /><br />
+
+        <label>Foto:</label><br />
+        <input type="file" accept="image/*" />
+
+        <br /><br />
+
+        <label>Cor Favorita:</label><br />
+        <input type="color" />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Dados Acadêmicos</legend>
+
+        <label>Curso:</label><br />
+
+        <select>
+          <option>ADS</option>
+          <option>COMEX</option>
+          <option>Gestão Empresarial</option>
+        </select>
+
+        <br /><br />
+
+        <label>Período:</label><br />
+
+        <input type="radio" name="periodo" />
+        Manhã
+
+        <input type="radio" name="periodo" />
+        Noite
+
+        <br /><br />
+
+        <input type="checkbox" />
+        Já programou antes?
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Observações</legend>
+
+        <textarea rows="5" cols="40"></textarea>
+      </fieldset>
+
+      <br />
+
+      <button type="submit">Enviar Matrícula</button>
+    </form>
+  </body>
+</html>
